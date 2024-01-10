@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Why It Matters</title>
+    <!--@ Reset Styles Here -->
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+          "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+          "Helvetica Neue", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      *::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+    <!--@ Other Styles Here -->
+    <style>
+      :root {
+        --scroll: 0;
+        --fg: blanchedalmond;
+        --bg: #222;
+      }
+
+      body {
+        padding-top: 100vh;
+        background-color: var(--bg);
+        color: var(--fg);
+      }
+
+      #sticky-parallax-header {
+        container-type: size;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-image: url("https://source.unsplash.com/wwt99cy9jTk");
+        background-size: cover;
+        background-blend-mode: soft-light;
+        height: calc(100dvh - min(1vh * var(--scroll), 90dvh));
+        background-position: 50% calc(1% * min(var(--scroll), 80));
+        overflow: clip;
+      }
+
+      #sticky-text-header {
+        position: fixed;
+        min-width: -webkit-fill-available;
+        padding-inline: 0.5rem;
+        user-select: none;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        text-shadow: 1px 1px 2px rgb(114, 12, 12), 0 0 1em rgb(30, 30, 77),
+          0 0 0.2em rgb(9, 9, 128);
+        top: calc(8dvh - min(0.2vh * var(--scroll), 6.5vh));
+      }
+
+      @container (width >= 0) {
+        #sticky-text-header {
+          font-size: clamp(2rem, 9cqmin, 5rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="sticky-parallax-header">
+      <span id="sticky-text-header">Why It Matters?</span>
+    </div>
+    <!--# Currently Working On Styles -->
+    <style>
+      #content {
+        padding: 1rem;
+        margin: 0 auto 0;
+        width: 80vw;
+        max-width: 60em;
+        opacity: calc(0% + 1% * min(var(--scroll), 50) * 100 / 50);
+      }
+    </style>
+    <div id="content">
+      <h1>Top Of Content</h1>
+      <svg
+        width="125"
+        height="142"
+        viewBox="0 0 125 142"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          id="Polygon 1"
+          d="M102.2 2.9348C111.477 -2.94006 123.598 3.66486 123.69 14.6451L124.632 126.974C124.721 137.65 113.308 144.493 103.933 139.385L8.08816 87.1559C-1.28649 82.0474 -1.72285 68.7469 7.29682 63.0349L102.2 2.9348Z"
+          fill="#f4982f" />
+      </svg>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis
+        turpis eu neque tincidunt lacinia. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Aliquam auctor
+        ultrices tortor et volutpat. Donec eu semper orci, eu fermentum orci.
+        Vivamus aliquam lobortis egestas. Proin vel mauris vitae sem auctor
+        cursus. Aenean sit amet odio at magna pharetra luctus nec eget urna.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Praesent in leo at tellus ultricies laoreet.
+      </p>
+
+      <p>
+        Duis nec nisi a eros dictum euismod nec non enim. Donec augue neque,
+        aliquam id finibus a, volutpat ut ligula. Nam feugiat odio elit, ut
+        molestie mi tempus vel. Etiam vitae velit eget massa scelerisque
+        hendrerit cursus vel justo. Sed eget euismod lectus. Morbi tincidunt
+        diam ac diam tempor molestie. Mauris eget lectus leo. Etiam id porta
+        turpis.
+      </p>
+
+      <p>
+        Aenean ac pellentesque ante. In hac habitasse platea dictumst. Nullam
+        efficitur, dolor ac pharetra iaculis, sem elit maximus ex, et malesuada
+        est ipsum tempor nisi. Phasellus auctor et turpis ultrices fermentum.
+        Mauris ac orci sapien. Quisque auctor, mi eu vestibulum dictum, nisl
+        felis pulvinar dui, non dictum justo tellus a urna. Morbi suscipit et
+        odio a feugiat. Sed dui nisi, iaculis a lacus posuere, dictum laoreet
+        felis. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos.
+      </p>
+
+      <p>
+        Nam pulvinar congue condimentum. Pellentesque fringilla ante sed massa
+        tincidunt feugiat. Nulla bibendum est eros, non malesuada dolor vehicula
+        in. Morbi eu cursus arcu. Phasellus ultricies ornare lorem, non interdum
+        orci condimentum eu. Donec condimentum condimentum ligula ut placerat.
+        Vestibulum id neque condimentum, molestie nunc vel, suscipit turpis.
+        Quisque orci velit, mattis et nibh non, tempor finibus erat. Nullam
+        tristique, tortor non commodo cursus, magna turpis rhoncus leo, quis
+        porta quam ante sed orci. Nunc vehicula imperdiet leo in vulputate.
+        Quisque quis dolor orci.
+      </p>
+
+      <p>
+        Curabitur ultrices fringilla libero sit amet porta. Nulla rhoncus
+        venenatis euismod. Praesent non interdum sem. Nunc in nibh tincidunt,
+        faucibus sem at, finibus turpis. Nullam vel odio blandit, tincidunt urna
+        et, luctus lectus. Vivamus porta sem vitae turpis interdum porta eu id
+        ligula. Fusce non nisi fringilla, malesuada metus ut, imperdiet ligula.
+        Nunc quis lorem nibh. Duis pharetra magna vestibulum metus convallis, id
+        mollis ligula vulputate. Sed purus est, consectetur non suscipit sit
+        amet, hendrerit at dolor. Maecenas feugiat, quam vel ullamcorper
+        feugiat, sapien ipsum viverra justo, id cursus metus nisi quis enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis
+        turpis eu neque tincidunt lacinia. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Aliquam auctor
+        ultrices tortor et volutpat. Donec eu semper orci, eu fermentum orci.
+        Vivamus aliquam lobortis egestas. Proin vel mauris vitae sem auctor
+        cursus. Aenean sit amet odio at magna pharetra luctus nec eget urna.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Praesent in leo at tellus ultricies laoreet.
+      </p>
+
+      <p>
+        Duis nec nisi a eros dictum euismod nec non enim. Donec augue neque,
+        aliquam id finibus a, volutpat ut ligula. Nam feugiat odio elit, ut
+        molestie mi tempus vel. Etiam vitae velit eget massa scelerisque
+        hendrerit cursus vel justo. Sed eget euismod lectus. Morbi tincidunt
+        diam ac diam tempor molestie. Mauris eget lectus leo. Etiam id porta
+        turpis.
+      </p>
+
+      <p>
+        Aenean ac pellentesque ante. In hac habitasse platea dictumst. Nullam
+        efficitur, dolor ac pharetra iaculis, sem elit maximus ex, et malesuada
+        est ipsum tempor nisi. Phasellus auctor et turpis ultrices fermentum.
+        Mauris ac orci sapien. Quisque auctor, mi eu vestibulum dictum, nisl
+        felis pulvinar dui, non dictum justo tellus a urna. Morbi suscipit et
+        odio a feugiat. Sed dui nisi, iaculis a lacus posuere, dictum laoreet
+        felis. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos.
+      </p>
+
+      <p>
+        Nam pulvinar congue condimentum. Pellentesque fringilla ante sed massa
+        tincidunt feugiat. Nulla bibendum est eros, non malesuada dolor vehicula
+        in. Morbi eu cursus arcu. Phasellus ultricies ornare lorem, non interdum
+        orci condimentum eu. Donec condimentum condimentum ligula ut placerat.
+        Vestibulum id neque condimentum, molestie nunc vel, suscipit turpis.
+        Quisque orci velit, mattis et nibh non, tempor finibus erat. Nullam
+        tristique, tortor non commodo cursus, magna turpis rhoncus leo, quis
+        porta quam ante sed orci. Nunc vehicula imperdiet leo in vulputate.
+        Quisque quis dolor orci.
+      </p>
+
+      <p>
+        Curabitur ultrices fringilla libero sit amet porta. Nulla rhoncus
+        venenatis euismod. Praesent non interdum sem. Nunc in nibh tincidunt,
+        faucibus sem at, finibus turpis. Nullam vel odio blandit, tincidunt urna
+        et, luctus lectus. Vivamus porta sem vitae turpis interdum porta eu id
+        ligula. Fusce non nisi fringilla, malesuada metus ut, imperdiet ligula.
+        Nunc quis lorem nibh. Duis pharetra magna vestibulum metus convallis, id
+        mollis ligula vulputate. Sed purus est, consectetur non suscipit sit
+        amet, hendrerit at dolor. Maecenas feugiat, quam vel ullamcorper
+        feugiat, sapien ipsum viverra justo, id cursus metus nisi quis enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis
+        turpis eu neque tincidunt lacinia. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Aliquam auctor
+        ultrices tortor et volutpat. Donec eu semper orci, eu fermentum orci.
+        Vivamus aliquam lobortis egestas. Proin vel mauris vitae sem auctor
+        cursus. Aenean sit amet odio at magna pharetra luctus nec eget urna.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Praesent in leo at tellus ultricies laoreet.
+      </p>
+
+      <p>
+        Duis nec nisi a eros dictum euismod nec non enim. Donec augue neque,
+        aliquam id finibus a, volutpat ut ligula. Nam feugiat odio elit, ut
+        molestie mi tempus vel. Etiam vitae velit eget massa scelerisque
+        hendrerit cursus vel justo. Sed eget euismod lectus. Morbi tincidunt
+        diam ac diam tempor molestie. Mauris eget lectus leo. Etiam id porta
+        turpis.
+      </p>
+
+      <p>
+        Aenean ac pellentesque ante. In hac habitasse platea dictumst. Nullam
+        efficitur, dolor ac pharetra iaculis, sem elit maximus ex, et malesuada
+        est ipsum tempor nisi. Phasellus auctor et turpis ultrices fermentum.
+        Mauris ac orci sapien. Quisque auctor, mi eu vestibulum dictum, nisl
+        felis pulvinar dui, non dictum justo tellus a urna. Morbi suscipit et
+        odio a feugiat. Sed dui nisi, iaculis a lacus posuere, dictum laoreet
+        felis. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos.
+      </p>
+
+      <p>
+        Nam pulvinar congue condimentum. Pellentesque fringilla ante sed massa
+        tincidunt feugiat. Nulla bibendum est eros, non malesuada dolor vehicula
+        in. Morbi eu cursus arcu. Phasellus ultricies ornare lorem, non interdum
+        orci condimentum eu. Donec condimentum condimentum ligula ut placerat.
+        Vestibulum id neque condimentum, molestie nunc vel, suscipit turpis.
+        Quisque orci velit, mattis et nibh non, tempor finibus erat. Nullam
+        tristique, tortor non commodo cursus, magna turpis rhoncus leo, quis
+        porta quam ante sed orci. Nunc vehicula imperdiet leo in vulputate.
+        Quisque quis dolor orci.
+      </p>
+
+      <p>
+        Curabitur ultrices fringilla libero sit amet porta. Nulla rhoncus
+        venenatis euismod. Praesent non interdum sem. Nunc in nibh tincidunt,
+        faucibus sem at, finibus turpis. Nullam vel odio blandit, tincidunt urna
+        et, luctus lectus. Vivamus porta sem vitae turpis interdum porta eu id
+        ligula. Fusce non nisi fringilla, malesuada metus ut, imperdiet ligula.
+        Nunc quis lorem nibh. Duis pharetra magna vestibulum metus convallis, id
+        mollis ligula vulputate. Sed purus est, consectetur non suscipit sit
+        amet, hendrerit at dolor. Maecenas feugiat, quam vel ullamcorper
+        feugiat, sapien ipsum viverra justo, id cursus metus nisi quis enim.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis
+        turpis eu neque tincidunt lacinia. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Aliquam auctor
+        ultrices tortor et volutpat. Donec eu semper orci, eu fermentum orci.
+        Vivamus aliquam lobortis egestas. Proin vel mauris vitae sem auctor
+        cursus. Aenean sit amet odio at magna pharetra luctus nec eget urna.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia curae; Praesent in leo at tellus ultricies laoreet.
+      </p>
+
+      <p>
+        Duis nec nisi a eros dictum euismod nec non enim. Donec augue neque,
+        aliquam id finibus a, volutpat ut ligula. Nam feugiat odio elit, ut
+        molestie mi tempus vel. Etiam vitae velit eget massa scelerisque
+        hendrerit cursus vel justo. Sed eget euismod lectus. Morbi tincidunt
+        diam ac diam tempor molestie. Mauris eget lectus leo. Etiam id porta
+        turpis.
+      </p>
+
+      <p>
+        Aenean ac pellentesque ante. In hac habitasse platea dictumst. Nullam
+        efficitur, dolor ac pharetra iaculis, sem elit maximus ex, et malesuada
+        est ipsum tempor nisi. Phasellus auctor et turpis ultrices fermentum.
+        Mauris ac orci sapien. Quisque auctor, mi eu vestibulum dictum, nisl
+        felis pulvinar dui, non dictum justo tellus a urna. Morbi suscipit et
+        odio a feugiat. Sed dui nisi, iaculis a lacus posuere, dictum laoreet
+        felis. Class aptent taciti sociosqu ad litora torquent per conubia
+        nostra, per inceptos himenaeos.
+      </p>
+
+      <p>
+        Nam pulvinar congue condimentum. Pellentesque fringilla ante sed massa
+        tincidunt feugiat. Nulla bibendum est eros, non malesuada dolor vehicula
+        in. Morbi eu cursus arcu. Phasellus ultricies ornare lorem, non interdum
+        orci condimentum eu. Donec condimentum condimentum ligula ut placerat.
+        Vestibulum id neque condimentum, molestie nunc vel, suscipit turpis.
+        Quisque orci velit, mattis et nibh non, tempor finibus erat. Nullam
+        tristique, tortor non commodo cursus, magna turpis rhoncus leo, quis
+        porta quam ante sed orci. Nunc vehicula imperdiet leo in vulputate.
+        Quisque quis dolor orci.
+      </p>
+
+      <p>
+        Curabitur ultrices fringilla libero sit amet porta. Nulla rhoncus
+        venenatis euismod. Praesent non interdum sem. Nunc in nibh tincidunt,
+        faucibus sem at, finibus turpis. Nullam vel odio blandit, tincidunt urna
+        et, luctus lectus. Vivamus porta sem vitae turpis interdum porta eu id
+        ligula. Fusce non nisi fringilla, malesuada metus ut, imperdiet ligula.
+        Nunc quis lorem nibh. Duis pharetra magna vestibulum metus convallis, id
+        mollis ligula vulputate. Sed purus est, consectetur non suscipit sit
+        amet, hendrerit at dolor. Maecenas feugiat, quam vel ullamcorper
+        feugiat, sapien ipsum viverra justo, id cursus metus nisi quis enim.
+      </p>
+    </div>
+    <script>
+      window.addEventListener("scroll", setScrollVar)
+      window.addEventListener("resize", setScrollVar)
+
+      function setScrollVar() {
+        const htmlElement = document.documentElement
+        const percentOfScreenHeightScrolled =
+          htmlElement.scrollTop / htmlElement.clientHeight
+        htmlElement.style.setProperty(
+          "--scroll",
+          Math.min(percentOfScreenHeightScrolled * 100, 100)
+        )
+      }
+    </script>
+  </body>
+</html>
